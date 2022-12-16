@@ -247,11 +247,10 @@ input[type="search"] {
   }
   
   .menu__link {
-    display: block;
     padding: var(--spacing-md) var(--spacing-lg);
     color: var(--white);
-    text-shad
-
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 0 var(--black), -1px -1px 0 var(--black);
 }
 
 /* 고해상도 배경이미지 미디어쿼리 */
