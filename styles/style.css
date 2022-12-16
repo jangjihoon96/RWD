@@ -120,7 +120,7 @@ input[type="search"] {
   }
 
   .button--burger:focus {
-    /* outline-offset: 2px; */
+    outline-offset: 2px;
   }
 
   .button--burgerBarTop,
@@ -195,6 +195,29 @@ input[type="search"] {
   .button--burger {
     display: none;
   }
+
+  /* 데스크탑 메인메뉴 */
+  .menu {
+    background: var(--secondary-color);
+    padding: var(--spacing-base) var(--spacing-lg);
+  }
+
+  .menu__list {
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu__link {
+    display: block;
+    padding: var(--spacing-md) var(--spacing-lg);
+    color: var(--white);
+    text-shad
+
 }
 
 /* 고해상도 배경이미지 미디어쿼리 */
