@@ -131,30 +131,41 @@ input[type="search"] {
 .spriteTwitter{
   background-position: 0 -460px;
 }
+.accentBook{
+  color: var(--accent-book);
+}
+.accentNews{
+  color: var(--accent-news);
+}
+.accentBoard{
+  color: var(--accent-board);
+}
+.accentFavorite{
+  color: var(--accent-favorite);
+}
+.accentTwitter{
+  color: var(--accent-twitter);
+}
+
 
 /* 공통 추천서적 */
 .book{
-  background-color: lightcoral;
   grid-area: book;
 }
 /* 공통 새소식 */
 .news{
-  background-color: yellow;
   grid-area: news;
 }
 /* 공통 게시판 */
 .board{
-  background-color: lightblue;
   grid-area: board;
 }
 /* 공통 인기 사이트 */
 .favorite{
-  background-color: lightgreen;
   grid-area: favorite;
 }
 /* 공통 트위터 */
 .twitter{
-  background-color: tomato;
   grid-area: twitter;
 }
 
