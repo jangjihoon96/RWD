@@ -1,4 +1,3 @@
-/* Base Style */
 body,
 body::before,
 body::after,
@@ -33,32 +32,25 @@ video {
   height: auto;
 }
 
-/* 반응형 iframe */
-.iframeWrapper{
-  position: relative;
-  height: 0 !important;
+/* 가로가 100%일 때 세로는 56.25% */
+
+/* 반응형 Iframe */
+
+.iframeRatio-21-9 {
+  aspect-ratio: 21/9;
 }
-.iframeRatio-21-9{
-  /* padding-bottom: calc(9/21 * 100%); */
-  padding-bottom: 42.857142857142855%;
+.iframeRatio-16-9 {
+  aspect-ratio: 16/9;
 }
-.iframeRatio-16-9{
-  /* aspect-ratio: 16/9; */
-  /* padding-bottom: calc(9/16 * 100%); */
-  padding-bottom: 56.25%;
+.iframeRatio-4-3 {
+  aspect-ratio: 4/3;
 }
-.iframeRatio-4-3{
-  /* padding-bottom: calc(3/4 * 100%); */
-  padding-bottom: 75%;
-}
-.iframeRatio-1-1{
-  /* padding-bottom: calc(1/1 * 100%); */
-  padding-bottom: 100%;
+.iframeRatio-1-1 {
+  aspect-ratio: 1/1;
 }
 
-.iframeWrapper iframe{
+.iframeWrapper iframe {
+  display: block;
   width: 100%;
   height: 100%;
-  position: absolute;
-  top:0; left:0; 
 }
