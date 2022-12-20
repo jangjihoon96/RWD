@@ -208,6 +208,7 @@ input[type="search"] {
   grid-area: board;
   display: flex;
   flex-flow: row wrap;
+  overflow: hidden;
   
 }
 .board__title{
@@ -219,6 +220,7 @@ input[type="search"] {
   padding-top:var(--spacing-sm);
 }
 .board__list{
+  width: 100%;
   flex: 1 1 auto;
   order: 1;
   display: flex;
@@ -232,7 +234,7 @@ input[type="search"] {
 }
 .board__link{
   flex: 0 1 auto;
-  /* white-space: nowrap; */
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   width: calc(100% - 6.25em);
