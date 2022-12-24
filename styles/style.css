@@ -91,7 +91,55 @@
   margin-left: auto;
   margin-right: auto;
   padding: var(--spacing-base) var(--spacing-lg);
-  background-color: red;
+  display: grid;
+}
+.title_icon{
+  padding-left: 4rem;
+  height: 58px;
+  background-image: url(../images/sprite_main.png);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.book_title{
+  background-position: 0 0;
+}
+.notice_title{
+  background-position: 0 -115px;
+}
+.news_title{
+  background-position: 0 -230px;
+}
+.favorite_title{
+  background-position: 0 -345px;
+}
+.twitter_title{
+  background-position: 0 -460px;
+}
+.section_title strong{
+  width: 100%;
+  font-size: var(--text-md);
+  font-weight: 700;
+}
+.section_title span{
+  width: 100%;
+  font-size: var(--text-base);
+}
+.book_title span{
+  color: var(--green);
+}
+.news_title span{
+  color: var(--yellow);
+}
+.notice_title span{
+  color: var(--brown);
+}
+.favorite_title span{
+  color: var(--orange);
+}
+.twitter_title span{
+  color: var(--blue);
 }
 
 
@@ -183,6 +231,13 @@
     display: block;
     font-size: var(--text-lg);
     font-weight: 700;
+  }
+
+  /* 모바일 메인 */
+  .appMain{
+    grid-template-columns: 1;
+    grid-template-rows: auto;
+    gap: var(--spacing-xl);
   }
 }
 
